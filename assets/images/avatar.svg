@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c05a3e" />
+      <stop offset="50%" stop-color="#d48b38" />
+      <stop offset="100%" stop-color="#963a22" />
+    </linearGradient>
+    <linearGradient id="bgRing" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d48b38" />
+      <stop offset="100%" stop-color="#4a6b57" />
+    </linearGradient>
+  </defs>
+  <circle cx="160" cy="160" r="148" fill="url(#bgRing)" opacity="0.18" />
+  <circle cx="160" cy="160" r="140" fill="#211c19" stroke="url(#avatarGrad)" stroke-width="4" />
+  
+  <!-- Subtle warm vintage grid lines -->
+  <g opacity="0.12" stroke="#ede7dc" stroke-width="1">
+    <line x1="40" y1="80" x2="280" y2="80" />
+    <line x1="40" y1="140" x2="280" y2="140" />
+    <line x1="40" y1="200" x2="280" y2="200" />
+    <line x1="40" y1="260" x2="280" y2="260" />
+    <line x1="80" y1="40" x2="80" y2="280" />
+    <line x1="160" y1="40" x2="160" y2="280" />
+    <line x1="240" y1="40" x2="240" y2="280" />
+  </g>
+
+  <!-- Designer / PM Silhouette -->
+  <path d="M70 285 C70 230 110 215 160 215 C210 215 250 230 250 285 Z" fill="url(#avatarGrad)" opacity="0.9" />
+  <rect x="142" y="175" width="36" height="46" rx="6" fill="#f7f4ee" opacity="0.95" />
+  <ellipse cx="160" cy="140" rx="44" ry="52" fill="#f7f4ee" />
+  <path d="M116 135 C116 85 140 75 160 75 C190 75 204 88 204 135 C196 112 184 105 160 105 C136 105 124 115 116 135 Z" fill="#2a221e" />
+  <rect x="128" y="132" width="26" height="16" rx="4" fill="none" stroke="#c05a3e" stroke-width="3" />
+  <rect x="166" y="132" width="26" height="16" rx="4" fill="none" stroke="#c05a3e" stroke-width="3" />
+  <line x1="154" y1="139" x2="166" y2="139" stroke="#c05a3e" stroke-width="3" />
+  <line x1="118" y1="138" x2="128" y2="138" stroke="#c05a3e" stroke-width="3" />
+  <line x1="192" y1="138" x2="202" y2="138" stroke="#c05a3e" stroke-width="3" />
+  
+  <path d="M148 165 Q160 173 172 165" stroke="#534b45" stroke-width="3" fill="none" stroke-linecap="round" />
+
+  <circle cx="160" cy="256" r="20" fill="#211c19" stroke="#d48b38" stroke-width="2" />
+  <text x="160" y="261" font-family="Georgia, serif" font-size="10" font-weight="bold" fill="#d48b38" text-anchor="middle">UI • PM</text>
+</svg>

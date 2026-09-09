@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio - Ian Van Lawrence Castones showcasing UI/UX design, projects, and technical capabilities." />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Immediate Theme Initializer -->
+  <script>
+    {
+      const theme = localStorage.getItem("color-scheme");
+      if (theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+        const meta = document.querySelector('meta[name="color-scheme"]');
+        if (meta) meta.setAttribute("content", theme);
+      }
+    }
+  </script>
+
+  <title>IAN VAN LAWRENCE CASTONES</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Sticky Header & Navigation -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#hero" class="logo" aria-label="Ian Van Lawrence Castones Portfolio Home">
+        <div class="logo-icon">IC</div>
+        <span class="logo-text" id="logo-text">Ian Van Lawrence Castones</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-desktop">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Others</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Color Scheme" title="Toggle Light/Dark Theme">
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+
+        <!-- Mobile Hamburger -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#skills" class="mobile-nav-link">Skills &amp; Stack</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#experience" class="mobile-nav-link">Others</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="hero-bg-watermark">DESIGN • MANAGEMENT</div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge status-badge">
+            <span class="status-dot"></span>
+            <span>Available for new opportunities &amp; consulting</span>
+          </div>
+          <p class="hero-greeting" id="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-title">
+            <span id="hero-name">Ian Van Lawrence Castones</span><br />
+            <span class="hero-title-accent" id="hero-role">UI/UX Designer &amp; Aspiring Project Manager</span>
+          </h1>
+          <p class="hero-tagline pretty-text" id="hero-tagline">
+            Translating complex user needs into delightful, intuitive design systems and leading agile teams to seamless project delivery.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-lg">Explore Projects</a>
+            <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">View Resume</a>
+          </div>
+
+          <div class="hero-socials" id="hero-socials"></div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow"></div>
+            <div class="avatar-card">
+              <img id="hero-avatar" src="assets/images/face1.jpg" alt="Ian Van Lawrence Castones" class="avatar-img" />
+            </div>
+            <div class="floating-pill pill-top-left">
+              <span class="pill-icon">🎨</span>
+              <span>Design Systems</span>
+            </div>
+            <div class="floating-pill pill-bottom-right">
+              <span class="pill-icon">⚡</span>
+              <span>Sprint Planning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text" id="about-bio"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CAPABILITIES</span>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">A comprehensive overview of my core technical proficiencies and tooling</p>
+        </div>
+
+        <!-- SKILLS CONTAINER TARGET -->
+        <div id="skills-container" class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Engineering Showcase</h2>
+          <p class="section-subtitle">Selected applications, systems, and open-source contributions</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" id="project-filters"></div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- PROJECT DETAIL MODAL DIALOG -->
+    <dialog id="project-modal" class="project-modal" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <img id="modal-image" src="" alt="Preview" />
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">✕</button>
+      </div>
+      
+      <div class="modal-content" id="modal-project-details">
+        <div>
+          <h2 id="modal-title" class="modal-title">Project Title</h2>
+          <span id="modal-subtitle" style="color: var(--accent); font-weight: 600;">Subtitle</span>
+          <div id="modal-role" style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary); margin-top: 0.4rem;"></div>
+        </div>
+        
+        <div id="modal-metrics" class="modal-metrics-box">
+          Metrics Callout
+        </div>
+
+        <p id="modal-desc" class="pretty-text" style="color: var(--text-secondary);"></p>
+
+        <div>
+          <h4 class="modal-section-title">Architectural Highlights &amp; Capabilities</h4>
+          <ul id="modal-features" class="modal-features-list"></ul>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Technologies &amp; Tools</h4>
+          <div id="modal-tech" class="project-tech-tags"></div>
+        </div>
+
+        <div class="modal-actions">
+          <a id="modal-link-github" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+            View Source on GitHub
+          </a>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- DEDICATED IMAGE LIGHTBOX MODAL -->
+    <dialog id="image-lightbox-modal" class="image-lightbox-modal">
+      <button id="lightbox-close-btn" class="lightbox-close-btn" aria-label="Close image lightbox">✕</button>
+      <div class="lightbox-body">
+        <button id="lightbox-prev-btn" class="lightbox-arrow-btn" aria-label="Previous image">‹</button>
+        <div class="lightbox-img-wrapper">
+          <img id="lightbox-main-img" src="" alt="Enlarged view" />
+        </div>
+        <button id="lightbox-next-btn" class="lightbox-arrow-btn" aria-label="Next image">›</button>
+      </div>
+    </dialog>
+
+    <!-- OTHERS & CERTIFICATES SECTION -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Learning &amp; Growth</span>
+          <h2 class="section-title">Others &amp; Credentials</h2>
+          <p class="section-subtitle">Continuous learning through recognized programs, workshops, and certifications</p>
+        </div>
+
+        <!-- Timeline Container for Seminars/Activities -->
+        <div class="experience-timeline" id="timeline-container"></div>
+
+        <!-- CERTIFICATES HORIZONTAL ROW CONTAINER -->
+        <div style="margin-top: 3.5rem; clear: both;">
+          <div class="section-header" style="margin-bottom: 1.5rem;">
+            <span class="section-tag">Credentials</span>
+            <h3 class="section-title" style="font-size: 1.6rem;">Certifications</h3>
+          </div>
+          
+          <div class="cert-carousel-wrapper">
+            <button id="cert-scroll-left" class="cert-scroll-btn left" aria-label="Scroll left">‹</button>
+            <div id="certificates-container" class="cert-row-scroll"></div>
+            <button id="cert-scroll-right" class="cert-scroll-btn right" aria-label="Scroll right">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Communication</span>
+          <h2 class="section-title">Let's Build Together</h2>
+          <p class="section-subtitle">Have an upcoming project, open role, or architecture question? Send a note.</p>
+        </div>
+
+        <div class="contact-info-cards" style="max-width: 600px; margin: 0 auto;">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div>
+              <div class="contact-card-title">Direct Email</div>
+              <a id="contact-email" href="mailto:yancastones@gmail.com" class="contact-card-value">yancastones@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div>
+              <div class="contact-card-title">Location</div>
+              <div id="contact-location" class="contact-card-value">Philippines • Remote</div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 16 14"></polyline></svg>
+            </div>
+            <div>
+              <div class="contact-card-title">Current Status</div>
+              <div id="contact-availability" class="contact-card-value" style="color: var(--accent);">Available for new roles</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="footer-copy">
+        © 2026 <span id="footer-name">Ian Van Lawrence Castones</span>. Crafted with modern web standards, accessibility, and precision.
+      </p>
+      <a href="#hero" class="back-to-top">
+        Back to Top ↑
+      </a>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container" aria-live="polite"></div>
+
+  <!-- Application Scripts -->
+  <script src="js/portfolio-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

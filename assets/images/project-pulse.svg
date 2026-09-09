@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgV1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#211c19" />
+      <stop offset="100%" stop-color="#2d221c" />
+    </linearGradient>
+    <linearGradient id="vLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c05a3e" />
+      <stop offset="100%" stop-color="#d48b38" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#bgV1)" />
+  <rect width="600" height="42" fill="#2b2420" opacity="0.8" rx="16" />
+  <circle cx="28" cy="21" r="5" fill="#c05a3e" />
+  <circle cx="46" cy="21" r="5" fill="#d48b38" />
+  <circle cx="64" cy="21" r="5" fill="#4a6b57" />
+  <text x="300" y="25" fill="#d4c9bc" font-size="12" font-family="Georgia, serif" text-anchor="middle">healthtrack.design/telehealth-case-study</text>
+
+  <rect x="30" y="65" width="165" height="75" rx="10" fill="#28221e" stroke="#3d352f" />
+  <text x="45" y="90" fill="#9e9184" font-size="11" font-family="sans-serif">BOOKING SPEED</text>
+  <text x="45" y="122" fill="#d48b38" font-size="22" font-weight="bold" font-family="Georgia, serif">+35% Faster</text>
+
+  <rect x="215" y="65" width="165" height="75" rx="10" fill="#28221e" stroke="#3d352f" />
+  <text x="230" y="90" fill="#9e9184" font-size="11" font-family="sans-serif">TASK COMPLETION</text>
+  <text x="230" y="122" fill="#4a6b57" font-size="22" font-weight="bold" font-family="Georgia, serif">98.4% Rate</text>
+
+  <rect x="400" y="65" width="170" height="75" rx="10" fill="#28221e" stroke="#3d352f" />
+  <text x="415" y="90" fill="#9e9184" font-size="11" font-family="sans-serif">USER SATISFACTION</text>
+  <text x="415" y="122" fill="#c05a3e" font-size="22" font-weight="bold" font-family="Georgia, serif">4.9 / 5.0</text>
+
+  <rect x="30" y="160" width="540" height="190" rx="10" fill="#28221e" stroke="#3d352f" />
+  <line x1="50" y1="210" x2="550" y2="210" stroke="#3d352f" stroke-dasharray="4" />
+  <line x1="50" y1="260" x2="550" y2="260" stroke="#3d352f" stroke-dasharray="4" />
+  
+  <path d="M 50 310 Q 110 240 170 270 T 290 220 T 410 250 T 550 190" fill="none" stroke="url(#vLine)" stroke-width="3.5" />
+  <circle cx="170" cy="270" r="6" fill="#c05a3e" />
+  <circle cx="290" cy="220" r="6" fill="#d48b38" />
+  <circle cx="410" cy="250" r="6" fill="#4a6b57" />
+  <circle cx="550" cy="190" r="6" fill="#c05a3e" />
+
+  <text x="60" y="195" fill="#f5f0e8" font-size="12" font-family="Georgia, serif">Discovery → Wireframing → High-Fi Prototype → Usability Testing</text>
+</svg>
